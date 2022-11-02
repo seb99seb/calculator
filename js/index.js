@@ -12,7 +12,6 @@ const app = Vue.createApp({
     methods:{
         calculate(){
             this.result = this.number1 + this.number2
-            
         }
     }
 }).mount("#app")
