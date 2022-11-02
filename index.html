@@ -7,16 +7,16 @@
 </head>
 
 <body>
-    <div id="app">
-        <input v-model="word" type="text" id="Type a word">
-        <button type="button" @click="Save">Save</button>
-        <button type="button" @click="Show">Show</button>
-        <button type="button" @click="Clear">Clear</button> 
-        <div>
-            <a v-if="words.length==0">empty</a>
-            <a v-else>{{wordDisplay}}</a>
-        </div>
+    <input type="text" v-model.number="number1">
+    <a v-model="operation">+</a>
+    <input type="text" v-model.number="number2">
+    <button type="button" v-on:click="calculate">=</button>
+    <div>
+        {{ result }}
     </div>
+
+    
+    
 
     <script src="js/index.js"></script>
     <script>app.mount('#app');</script>
